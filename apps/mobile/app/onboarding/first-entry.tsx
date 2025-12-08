@@ -199,7 +199,7 @@ export default function FirstEntryScreen() {
             <Text style={styles.subtitle}>
               {firstChild
                 ? `What's one thing you want to remember about ${firstChild.name} today?`
-                : 'What's one thing you want to remember today?'}
+                : "What's one thing you want to remember today?"}
             </Text>
           </View>
 

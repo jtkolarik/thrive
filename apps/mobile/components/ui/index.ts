@@ -12,4 +12,5 @@ export * from './EmptyState';
 export * from './Input';
 export * from './LoadingSpinner';
 export * from './Modal';
+export * from './PasswordInput';
 export * from './Typography';
