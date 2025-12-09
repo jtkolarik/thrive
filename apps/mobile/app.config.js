@@ -1,0 +1,31 @@
+module.exports = {
+  expo: {
+    name: 'Thrive',
+    slug: 'thrive',
+    version: '1.0.0',
+    orientation: 'portrait',
+    icon: './assets/icon.png',
+    userInterfaceStyle: 'automatic',
+    splash: {
+      resizeMode: 'contain',
+      backgroundColor: '#ffffff',
+    },
+    assetBundlePatterns: ['**/*'],
+    ios: {
+      supportsTablet: true,
+      bundleIdentifier: 'com.thrive.app',
+    },
+    android: {
+      adaptiveIcon: {
+        backgroundColor: '#ffffff',
+      },
+      package: 'com.thrive.app',
+    },
+    scheme: 'thrive',
+    plugins: ['expo-router', 'expo-secure-store'],
+    extra: {
+      EXPO_PUBLIC_SUPABASE_URL: process.env.EXPO_PUBLIC_SUPABASE_URL,
+      EXPO_PUBLIC_SUPABASE_ANON_KEY: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY,
+    },
+  },
+};
