@@ -3,14 +3,10 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { AuthProvider } from '../contexts/AuthContext';
 
 // Prevent the splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
-
-// Placeholder AuthProvider - replace with actual implementation
-function AuthProvider({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
-}
 
 export default function RootLayout() {
   useEffect(() => {

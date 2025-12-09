@@ -1,22 +1,6 @@
 import { Tabs } from 'expo-router';
 import { Platform } from 'react-native';
-
-// Placeholder icon components - replace with actual icon library (e.g., @expo/vector-icons)
-function HomeIcon({ color, size }: { color: string; size: number }) {
-  return null; // Replace with actual icon
-}
-
-function ChatIcon({ color, size }: { color: string; size: number }) {
-  return null; // Replace with actual icon
-}
-
-function MemoriesIcon({ color, size }: { color: string; size: number }) {
-  return null; // Replace with actual icon
-}
-
-function ProfileIcon({ color, size }: { color: string; size: number }) {
-  return null; // Replace with actual icon
-}
+import { Ionicons } from '@expo/vector-icons';
 
 export default function TabsLayout() {
   return (
@@ -43,7 +27,7 @@ export default function TabsLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color, size }) => (
-            <HomeIcon color={color} size={size} />
+            <Ionicons name="home-outline" size={size} color={color} />
           ),
         }}
       />
@@ -52,7 +36,7 @@ export default function TabsLayout() {
         options={{
           title: 'Chat',
           tabBarIcon: ({ color, size }) => (
-            <ChatIcon color={color} size={size} />
+            <Ionicons name="chatbubbles-outline" size={size} color={color} />
           ),
         }}
       />
@@ -61,7 +45,7 @@ export default function TabsLayout() {
         options={{
           title: 'Memories',
           tabBarIcon: ({ color, size }) => (
-            <MemoriesIcon color={color} size={size} />
+            <Ionicons name="images-outline" size={size} color={color} />
           ),
         }}
       />
@@ -70,7 +54,7 @@ export default function TabsLayout() {
         options={{
           title: 'Profile',
           tabBarIcon: ({ color, size }) => (
-            <ProfileIcon color={color} size={size} />
+            <Ionicons name="person-outline" size={size} color={color} />
           ),
         }}
       />
